@@ -1,0 +1,19 @@
+{
+    "name": "My Codespace",
+    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-14",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode"
+        ],
+        "settings": {
+          "terminal.integrated.shell.linux": "/bin/bash"
+        }
+      }
+    },
+    "postCreateCommand": "npm install",
+    "forwardPorts": [3000],
+    "remoteUser": "vscode"
+  }
+  
